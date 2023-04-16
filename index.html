@@ -42,7 +42,7 @@
         <section id="ejercicios">                
             <article id="ejercicio1 row">
                 <h2>Ejercicio 1</h2>
-                <div class="offset-md-4 col-md-4 border p-2 text-center">
+                <div class="offset-md-4 col-md-4 col-sm-12 border p-2 text-center">
                     <button class="btn btn-success m-2" id="comenzar1">COMENZAR</button>
                     <div class="alert alert-warning"><b>Mensajes:</b> <span id="mensajes1"></span></div>
                     <form id="form1">
@@ -54,6 +54,39 @@
             <hr>
             <article id="ejercicio2">
                 <h2>Ejercicio 2</h2>
+                <div class="offset-md-4 col-md-4 col-sm-12 border p-2 text-center">
+                    <div class="alert alert-warning"><b>Mensajes:</b> <span id="mensajes2"></span></div>
+                    <form id="form2">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" required id="nombre" maxlength="50" name="nombre" placeholder="Ingrese el nombre" class="form-control my-2">
+
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" required min="0" max="90" name="edad" placeholder="Ingrese la edad" class="form-control my-2">
+
+                        <label for="DNI">DNI</label>
+                        <input type="number" id="DNI" required min="400000" name="DNI" placeholder="Ingrese DNI" class="form-control my-2">
+                        <label for="sexo">Sexo: <select name="sexo" id="sexo" class="form-select mb-2">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                        </label>
+                        <br>
+                        <label for="peso">Peso</label>
+                        <input type="number" id="peso" required min="0" max="200" name="peso" step="0.1" placeholder="Ingrese el Peso (kg)" class="form-control my-2">
+
+                        <label for="altura">Altura</label>
+                        <input type="number" id="altura" required min="0.3" max="2.5" step="0.01" name="altura" placeholder="Ingrese la altura" class="form-control my-2">
+
+                        <label for="nacimiento">Nacimiento <input required type="date" name="nacimiento" id="nacimiento"></label>
+
+                        <input type="submit" value="ENVIAR" class="btn btn-primary m-2">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" disabled id="generacion" class="btn btn-sm btn-primary">Generación</button>
+                            <button type="button" disabled id="esmayor" class="btn btn-sm btn-warning">Es Mayor</button>
+                            <button type="button" disabled id="verdatos" class="btn btn-sm btn-success">Ver Datos</button>
+                        </div>  
+                    </form>
+                </div>
             </article>
             <hr>
             <article id="ejercicio3">
