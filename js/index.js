@@ -12,7 +12,7 @@ window.$ejercicio1 = document.getElementById('ejercicio1'); window.$ejercicio4 =
 window.$ejercicio2 = document.getElementById('ejercicio2'); window.$ejercicio5 = document.getElementById('ejercicio5');
 window.$ejercicio3 = document.getElementById('ejercicio3'); window.$ejercicio6 = document.getElementById('ejercicio6');
 
-ejercicio1(); ejercicio2();
+ejercicio1(); ejercicio2(); ejercicio5();
 
 
 
