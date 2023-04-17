@@ -131,6 +131,19 @@
             <hr>
             <article id="ejercicio6">
                 <h2>Ejercicio 6</h2>
+                <div class="row">
+                    <form class="border offset-md-4 rounded p-2 col-md-4" id="form6">
+                        <input required class="form-control my-2" min="0" max="24" type="number" name="thora" id="thora" placeholder="horas">
+                        <input required class="form-control my-2" min="0" max="60" type="number" name="tminuto" id="tminuto" placeholder="minutos">
+                        <input required class="form-control my-2" min="0" max="60" type="number" name="tsegundo" id="tsegundo" placeholder="segundos">
+                        <h3 id="temporizador" class="text-center">00:00:00</h3>
+                        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic example">
+                            <button type="button" id="tpausa" class="btn btn-sm btn-success">Pausa</button>
+                            <button type="button" id="tinicio" class="btn btn-sm btn-primary">Inicio</button>
+                            <button type="button" id="treset" class="btn btn-sm btn-danger">Reset</button>
+                        </div>  
+                    </form>
+                </div>
             </article>
             <hr>
         </section>
