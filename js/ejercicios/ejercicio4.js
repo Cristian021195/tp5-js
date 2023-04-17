@@ -10,11 +10,14 @@ export function ejercicio4(){
 
         document.getElementById('date').innerHTML =  dias[now.getDay()] + ' ' + date.split('/')[0] + ' de ' + meses[date.split('/')[1]] + ' de ' + date.split('/')[2];
 
-        let hora = (parseInt(time.split(':')[0]) > 12 && time.split(':')[0] - 12);
+        let hora = time.split(':')[0];
+        if(parseInt(time.split(':')[0]) > 12){
+            hora = parseInt(time.split(':')[0]) - 12;
+        }else{
+            hora = parseInt(time.split(':')[0]);
+        }
         let minuto = time.split(':')[1];
         let segundo = time.split(':')[2];
-
-
         document.getElementById('time').innerHTML = `${hora < 10 && '0'+hora}:${minuto}:${segundo} ${parseInt(time.split(':')[0]) > 12 ? 'pm' : 'am'}`;
     }
 
