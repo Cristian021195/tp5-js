@@ -1,3 +1,4 @@
+export {ejercicio0} from './ejercicio0.js';
 export {ejercicio1} from './ejercicio1.js';
 export {ejercicio2} from './ejercicio2.js';
 
